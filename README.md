@@ -1,12 +1,22 @@
 # IPL Data Analysis with Python
 
-A practical Exploratory Data Analysis (EDA) project using IPL match data with **Python**, **pandas**, and **Matplotlib**.
+A practical **Exploratory Data Analysis (EDA)** project using IPL match data with **Python**, **pandas**, and **Matplotlib**.
 
 ## Project Objective
 
-The goal of this project is to explore IPL match data and practice a complete analytical workflow: loading data, understanding its structure, selecting and filtering records, creating reusable analysis logic, and visualizing key patterns.
+The goal of this project is to explore IPL match data and practice a structured analytical workflow: loading data, understanding its structure, selecting and filtering records, creating reusable analysis logic, and visualizing key patterns.
 
-## Work Performed
+## Dataset
+
+The project uses an IPL match dataset containing **636 rows and 18 columns**.
+
+The dataset is included in this repository as:
+
+```text
+matches.csv
+```
+
+## Analysis Performed
 
 - Loaded IPL match data with pandas
 - Inspected dataset dimensions using `shape`
@@ -14,7 +24,7 @@ The goal of this project is to explore IPL match data and practice a complete an
 - Generated descriptive statistics using `describe()`
 - Selected individual and multiple columns
 - Used `iloc` for row and column indexing
-- Counted team appearances with `value_counts()`
+- Counted team appearances using `value_counts()`
 - Filtered matches by city
 - Created a reusable `get_city_count()` function
 - Analyzed match winners
@@ -33,29 +43,34 @@ The goal of this project is to explore IPL match data and practice a complete an
 
 | File | Description |
 |---|---|
-| `ipl_data_eda.ipynb` | Main analysis notebook |
+| `ipl_data_eda.ipynb` | Main exploratory data analysis notebook |
+| `matches.csv` | IPL match dataset |
+| `requirements.txt` | Python dependencies |
+| `.gitignore` | Common Python/Jupyter files excluded from version control |
 | `README.md` | Project documentation |
-
-## Dataset
-
-The notebook expects the IPL match dataset to be available locally as:
-
-```text
-matches.csv
-```
-
-The dataset itself is not included in this repository yet.
 
 ## Skills Demonstrated
 
+- Exploratory Data Analysis
 - Data inspection
 - DataFrame indexing and slicing
 - Boolean filtering
 - Frequency analysis
 - Reusable Python functions
-- Exploratory data analysis
 - Data visualization
 
-## Note
+## How to Run
 
-This repository reflects the analysis contained in the notebook itself. Additional cleaning or preprocessing steps should only be documented when they are present in the project code.
+1. Clone or download this repository.
+2. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open `ipl_data_eda.ipynb` in Jupyter Notebook or VS Code.
+4. Run the notebook cells.
+
+## Portfolio Note
+
+This project documents the analysis that is actually present in the notebook and is part of my growing Data Analyst portfolio.
